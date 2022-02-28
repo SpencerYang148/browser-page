@@ -9,6 +9,7 @@
     "scripts": {
         "dev": "webpack serve -c ./build/webpack.dev.config.js",
         "build": "webpack -c ./build/webpack.prod.config.js",
+        "build:static": "webpack -c ./build/webpack.staticPage.config.js",
         "start": "http-server ./dist -p 8080"
     },
     "devDependencies": {
