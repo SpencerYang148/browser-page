@@ -1,7 +1,7 @@
 {
-    "name": "classroom-controller",
+    "name": "browser-page",
     "version": "1.0.0",
-    "description": "编码马拉松移动助手",
+    "description": "browser-page",
     "main": "dist/main.js",
     "author": "SpencerYang",
     "license": "MIT",

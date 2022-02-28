@@ -4,6 +4,6 @@ const baseConfig = require('./webpack.config');
 module.exports = merge(baseConfig, {
     mode: 'production',
     output: {
-        publicPath: '/classroom-controller/',
+        publicPath: '/',
     },
 });
