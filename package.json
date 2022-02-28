@@ -8,8 +8,9 @@
     "private": true,
     "scripts": {
         "dev": "webpack serve -c ./build/webpack.dev.config.js",
-        "build": "webpack -c ./build/webpack.prod.config.js",
-        "build:static": "webpack -c ./build/webpack.staticPage.config.js",
+        "prebuild": "rimraf ./dist-static",
+        "build": "yarn prebuild && webpack -c ./build/webpack.prod.config.js",
+        "build:static": "yarn prebuild && webpack -c ./build/webpack.staticPage.config.js",
         "start": "http-server ./dist -p 8080"
     },
     "devDependencies": {
@@ -21,6 +22,7 @@
         "http-server": "14.0.0",
         "less": "4.1.2",
         "less-loader": "10.2.0",
+        "rimraf": "3.0.2",
         "style-loader": "3.3.1",
         "ts-loader": "9.2.6",
         "typescript": "4.5.4",
