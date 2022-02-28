@@ -8,9 +8,8 @@
     "private": true,
     "scripts": {
         "dev": "webpack serve -c ./build/webpack.dev.config.js",
-        "prebuild": "rimraf ./dist-static",
-        "build": "yarn prebuild && webpack -c ./build/webpack.prod.config.js",
-        "build:static": "yarn prebuild && webpack -c ./build/webpack.staticPage.config.js",
+        "build": "rimraf ./dist && webpack -c ./build/webpack.prod.config.js",
+        "build:static": "rimraf ./dist-static && webpack -c ./build/webpack.staticPage.config.js",
         "start": "http-server ./dist -p 8080"
     },
     "devDependencies": {
