@@ -30,6 +30,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            title: '首页',
             template: path.resolve(process.cwd(), 'build/template.html'),
         }),
     ],
