@@ -29,6 +29,7 @@ let MianPage = (props: IProps) => {
                 <SeachItem name="Bing" urlTemplate="https://cn.bing.com/search?q=${query}" />
                 <SeachItem name="Baidu" urlTemplate="https://www.baidu.com/s?wd=${query}" />
                 <SeachItem name="Github" urlTemplate="https://github.com/search?q=${query}" />
+                <SeachItem name="SO" urlTemplate="https://stackoverflow.com/search?q=${query}" />
             </div>
         </div>
     );
