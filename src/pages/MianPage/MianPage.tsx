@@ -34,7 +34,7 @@ let MianPage = (props: IProps) => {
                     name="MDN"
                     urlTemplate="https://developer.mozilla.org/zh-CN/search?q=${query}"
                 />
-                <SeachItem name="npm" urlTemplate="https://www.npmjs.com/package/${query}" />
+                <SeachItem name="npm" urlTemplate="https://www.npmjs.com/search?q=${query}" />
             </div>
         </div>
     );
