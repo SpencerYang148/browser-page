@@ -1,6 +1,6 @@
 import './style.less';
 import React, { memo, useState } from 'react';
-import { Button, Input } from 'antd';
+import { Icon } from '../Icon/Icon';
 
 //私有常量
 
@@ -38,10 +38,16 @@ let SeachItem = (props: IProps) => {
     return (
         <div className="seach-item">
             <div className="name">{name}:</div>
-            <Input allowClear value={queryText} onChange={handleChange} onKeyUp={handleKeyUp} />
-            <Button type="primary" onClick={handleSearch}>
-                搜索
-            </Button>
+            <input
+                className="input"
+                value={queryText}
+                onChange={handleChange}
+                onKeyUp={handleKeyUp}
+            />
+            <div className="btn" onClick={handleSearch}>
+                {/* 搜索 */}
+                <Icon name="ic_shurukuang_sousuo" />
+            </div>
         </div>
     );
 };
