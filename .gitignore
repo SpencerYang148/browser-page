@@ -1,3 +1,4 @@
 dist
+dist-static
 node_modules
 **/*.LICENSE.txt

@@ -1,5 +1,5 @@
 ## 搜索首页
-### [首页Demo](https://spenceryang148.github.io/browser-page/dist-static/)
+### [首页Demo](https://spenceryang148.github.io/browser-page)
 
 ### 本地开发
 - `yarn dev`
@@ -9,7 +9,7 @@
 > 如果部署到Github Page，则使用该方式
 - `yarn build:static`
 - git push origin
-- [Github Page](https://spenceryang148.github.io/browser-page/dist-static/)
+- [Github Page](https://spenceryang148.github.io/browser-page)
   > Github Page的更新需等待1分钟才生效
 
 ### 部署：服务器
