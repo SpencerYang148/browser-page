@@ -14,6 +14,7 @@ module.exports = {
     module: {
         rules: [
             {
+                sideEffects: false,
                 test: /\.tsx?$/,
                 loader: 'ts-loader',
                 options: { configFile: path.resolve(process.cwd(), 'tsconfig.json') },
