@@ -1,0 +1,38 @@
+@import '../../theme.less';
+
+.titlebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    width: 100%;
+    height: 58px;
+    color: #fff;
+    background-color: #999;
+    .titlebar-main {
+        font-weight: bolder;
+    }
+    .titlebar-extra {
+        display: flex;
+        align-items: center;
+        .titlebar-extra-item {
+            width: 28px;
+            height: 28px;
+            margin-left: 26px;
+            .theme-mixin-center-bg();
+        }
+        .titlebar-extra-change {
+            &.mixture {
+                background-image: url(../../images/ic_小工具_上下页.svg);
+            }
+            &.union {
+                background-image: url(../../images/ic_工具_轻白板.svg);
+            }
+        }
+
+        .titlebar-extra-end {
+            background-image: url(../../images/ic_工具_结束方映.svg);
+        }
+    }
+}
